@@ -95,15 +95,3 @@ summary(m1 <- glm(formula = new_products$salesrank ~ new_products$in_degree + ne
                     new_products$review_cnt + new_products$downloads + new_products$rating, family="poisson", data=products))
 
 exp(coef(m1))
-#odds of salesrank increases by 1.000134 when in_degree increases by 1
-#odds of salesrank increases by 1.00031 when out_degree increases by 1
-
-#Increasing out_degree has a more positive effect on salesrank than in_degree
-#Increasing out_degree has a more negative effect on sales than in_degree
-
-#odds of salesrank increases by 0.9997424 when review_cnt increases by 1
-#odds of salesrank increases by 0.9983484 when downloads increases by 1
-
-#odds of salesrank increases by 0.962607 when rating increases by 1
-#Increasing review_cnt has a more positive effect on salesrank than downloads,then rating.
-#Increasing review_cnt has a more negative effect on sales than downloads,then rating.
